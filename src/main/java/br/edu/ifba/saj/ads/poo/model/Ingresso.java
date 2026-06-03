@@ -22,4 +22,12 @@ public class Ingresso {
         this.cliente = cliente;
     }
 
+    @Override
+    public String toString() {
+        return "Ingresso [sessao=" + sessao + ", valor=" + valor + ", cliente=" + cliente + ", tipoIngresso="
+                + tipoIngresso + "]";
+    }
+
+    
+
 }

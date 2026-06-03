@@ -56,6 +56,17 @@ public class SessaoController {
 
     }
 
+        @FXML
+    public void abrirVenderIngresso(ActionEvent event) {
+        try {
+            App.setRoot("Ingresso");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
+
     @FXML
     private void initialize() {
         slFilme.getItems().addAll(Cinema.filmes);
