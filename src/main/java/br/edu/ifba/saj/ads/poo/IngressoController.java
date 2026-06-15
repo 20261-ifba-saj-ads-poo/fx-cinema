@@ -39,6 +39,7 @@ public class IngressoController {
         slFilme.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 filmeSelecionado = newValue;
+                slHorarios.getItems().clear();
                 slHorarios.getItems().addAll(filmeSelecionado.getSessoes());
             }
         });
